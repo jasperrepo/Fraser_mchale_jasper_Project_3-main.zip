@@ -65,7 +65,9 @@ body {
   }
   .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  }
+    grid-template-areas: 
+    "hero hero hero";
+  }
 
 .features{
   display: grid;
@@ -73,6 +75,13 @@ body {
 
 }
 .feature{
+  background-color: rgb(119, 172, 216);
+  padding: 10px;
+  text-align: center;
+  box-shadow: #ffc600;
+  
+}
+.feature-special{
   background-color: rgb(119, 172, 216);
   padding: 10px;
   text-align: center;
@@ -145,5 +154,11 @@ body {
   .top {
     grid-template-areas:
     "hero menu"
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feature-special {
+    display: none;
   }
 }
