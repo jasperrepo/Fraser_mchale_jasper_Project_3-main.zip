@@ -95,10 +95,7 @@
       
     </div>
       
-        <img src="img/image_placeholder.jpg" alt="placeholder" class="about__mockup">
-        <div class="about__details">
-          <img src="img/image_placeholder.jpg">
-        </div>
+       
     <div class="feature">
         <span class="icon">🍺</span>
         <h3>service 6</h3>
@@ -115,7 +112,15 @@
     </section>
    
 
-<script>
+<script> 
+ const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
 </script>
 
 </body>
