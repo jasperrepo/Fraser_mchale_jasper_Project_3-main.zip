@@ -17,3 +17,33 @@ body {
     grid-template-areas: 
     "hero menu";
   }
+
+  .hero{
+    grid-area: hero;
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .menu{
+    display:grid;
+    padding: 0px;
+    margin: 10px;
+    grid-template-columns: auto;
+    list-style: none;
+  }
+  .menu a{
+    background-color: rgb(255, 246, 127);
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  [aria-controls="menu-list"] {
+   display: none;
+  }
