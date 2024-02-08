@@ -17,6 +17,12 @@ body {
     grid-template-areas: 
     "hero menu";
   }
+  .middle {
+    display: grid;
+    grid-template-areas: 
+    "hero menu";
+  }
+
 
   .hero{
     grid-area: hero;
@@ -30,6 +36,16 @@ body {
 
   .menu{
     display:grid;
+    padding: 0px;
+    margin: 10px;
+    grid-template-columns: auto;
+    list-style: none;
+  }
+  .menu1{
+    display:grid;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 30px;
     padding: 0px;
     margin: 10px;
     grid-template-columns: auto;
@@ -76,3 +92,4 @@ body {
     padding: 10px;
 
 }
+
