@@ -63,3 +63,16 @@ body {
   box-shadow: #ffc600;
   
 }
+
+.hero-logo{
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr)) ;
+    background-color: rgb(81, 83, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+
+}
