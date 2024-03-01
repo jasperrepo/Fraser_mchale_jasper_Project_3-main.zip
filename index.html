@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Responsive Website! homework 2!</title>
+</head>
+
+<div class="wrapper">
+    <div class="top">
+      <header class="hero">
+        <h1>LOGO IMAGE</h1>
+        <p>Placeholder!</p>
+      </header>
+     
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        
+        <ul id="menu-list">
+          <li>
+            <a href="">placeholder</a>
+          </li>
+          <li>
+            <a href="">placeholder</a>
+          </li>
+          <li>
+            <a href="">placeholder</a>
+          </li>
+          <li>
+            <a href="">placeholder</a>
+          </li>
+          <li>
+            <a href="">placeholder</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="wrapper">
+      <div class="hero-logo">
+        <header class="hero">
+          <h1>HERO IMAGE</h1>
+          <p>Placeholder!</p>
+        </header>
+  
+      </div>
+
+      <div class="wrapper">
+        <div class="middle">
+          <header class="hero">
+            <h1>LOGO IMAGE</h1>
+            <p>Placeholder!</p>
+          </header>
+          <nav class="menu1">
+              <h1>LOGO IMAGE</h1>
+            <p>Placeholder!</p>
+          </nav>
+          </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>service 1</h3>
+        <p>placeholder text</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>service 2</h3>
+        <p>placeholder text</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>service 3</h3>
+        <p>placeholder text</p>
+      </div>
+        <div class="feature">
+          <span class="icon">🍺</span>
+          <h3>service 4</h3>
+          <p>placeholder text</p>
+        </div>
+    </section>
+
+    <section class="about">
+    <div class="feature">
+      <span class="icon">🍺</span>
+      <h3>service 5</h3>
+      <p>placeholder text</p>
+      
+    </div>
+    <div class="feature-special">
+        <span class="icon">🍺</span>
+        <h3>image placeholder</h3>
+        <p>placeholder text</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>service 6</h3>
+        <p>placeholder text</p>
+      </div>
+    </section>
+
+<section>
+    <div class="hero">
+      <span class="icon">🍺</span>
+      <h3>Footer placeholder</h3>
+      <p>placeholder text</p>
+    </div>
+    </section>
+   
+
+<script> 
+ const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
+
+</body>
+
+</html>
